@@ -1,0 +1,11 @@
+# ignore python compile files
+*.pyc
+*.pyo
+
+# debian package
+*.deb
+*.dsc
+*.changes
+*.debhelper.log
+debian/python-siux-browsertest/*
+debian/python-module-stampdir*

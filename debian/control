@@ -1,0 +1,13 @@
+Source: python-siux-browsertest
+Section: net
+Priority: optional
+Build-Depends: cdbs, debhelper, python-setuptools, python-support
+Maintainer: Erik Brozek <erik@brozek.name>
+
+Package: python-siux-browsertest
+Section: net
+XB-Python-Version: ${python:Versions}
+Depends: ${python:Depends}
+Architecture: all
+Description: SiUX BrowserTest for Python
+ Advance browser test - unittest
