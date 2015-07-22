@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 # -*- coding: utf-8 -*-
 
-import xmlrpclib, os
+import xmlrpclib, os, sys
 
 
 class BrowserTestUp():
@@ -78,8 +78,14 @@ class BrowserTestUp():
 
 
 if __name__ == '__main__':
-	
-	bTU = BrowserTestUp('MODULE_FILE', 'CLIENT_HASH', 'ADVANCE_ID', 'http://localhost:3035')
 
-	retUpload = bTU.upload()
-	print retUpload
+	if len(sys.argv) == 4:
+		
+		moduleFile 	= sys.argv[1]
+		clientHash	= sys.argv[2]
+		advancedId	= sys.argv[3]
+
+		bTU = BrowserTestUp(moduleFile, clientHash, advancedId, 'http://localhost:3035')
+
+		retUpload = bTU.upload()
+		print retUpload
