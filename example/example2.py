@@ -35,7 +35,7 @@ class BrowserTest(BrowserTestCase):
 	# check first target URL
         self.assertEquals("%s/sit" % baseUrl, self.driver.current_url)
 
-	menuElem2 = self.driver.find_element_by_link_text("Vlastnosti systému")
+	menuElem2 = self.driver.find_element_by_link_text("Kontakt")
 
 	# check element exists on second page
 	self.assertIsNotNone(menuElem2)
@@ -43,4 +43,4 @@ class BrowserTest(BrowserTestCase):
 	menuElem2.click()
 
 	# check second target URL
-        self.assertEquals("%s/vlastnosti" % baseUrl, self.driver.current_url)
+        self.assertEquals("%s/kontakt" % baseUrl, self.driver.current_url)
