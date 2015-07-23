@@ -38,7 +38,7 @@ class BrowserTest(BrowserTestCase):
 
 	firstnameElem.send_keys('Julia')
 	lastnameElem.send_keys('Roberts')
-	emailElem.send_keys('julia.roberts@ni.cz')
+	emailElem.send_keys('julia.roberts@siux.cz')
 
 	btnElem.click()
 
