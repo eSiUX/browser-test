@@ -24,7 +24,7 @@ class BrowserTest(BrowserTestCase):
 
     def testContent(self):
 
-	baseUrl = "https://beta.siux.cz"
+	baseUrl = "https://www.siux.cz"
 
 	self.driver.get(baseUrl)
 
