@@ -21,7 +21,7 @@ class BrowserTest(BrowserTestCase):
 
     def testForm(self):
 
-	baseUrl = "https://beta.siux.cz"
+	baseUrl = "https://www.siux.cz"
 
 	self.driver.get("%s/signup" % baseUrl)
 
